@@ -58,7 +58,7 @@
         "id": "4d07bec8c54776d9",
         "type": "ha-device-config",
         "name": "Irrigation",
-        "hwVersion": "",
+        "hwVersion": "M001",
         "manufacturer": "Waveshare",
         "model": "Modbus RTU 8-ch Relay Module (D)",
         "swVersion": "1.00"
