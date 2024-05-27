@@ -1,0 +1,2163 @@
+[
+    {
+        "id": "fd177ccddb85d7c6",
+        "type": "tab",
+        "label": "Modbus [001]",
+        "disabled": false,
+        "info": "",
+        "env": [
+            {
+                "name": "unitid",
+                "value": "1",
+                "type": "num"
+            }
+        ]
+    },
+    {
+        "id": "66a80d81.ee5e14",
+        "type": "server",
+        "name": "Home Assistant",
+        "addon": true
+    },
+    {
+        "id": "da8e384eda9d22c7",
+        "type": "modbus-client",
+        "name": "Modbus HUB",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": false,
+        "tcpHost": "10.3.201.254",
+        "tcpPort": "502",
+        "tcpType": "TCP-RTU-BUFFERED",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 0,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2500,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": false,
+        "showLogs": false
+    },
+    {
+        "id": "4d07bec8c54776d9",
+        "type": "ha-device-config",
+        "name": "Irrigation",
+        "hwVersion": "",
+        "manufacturer": "Waveshare",
+        "model": "Modbus RTU 8-ch Relay Module (D)",
+        "swVersion": "1.00"
+    },
+    {
+        "id": "464d56838e4e33cf",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-SW01",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-SW01"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": "diagnostic"
+            },
+            {
+                "property": "device_class",
+                "value": "running"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "a455087cba84b5a2",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-SW01",
+        "version": "6",
+        "entityType": "switch",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-SW01"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "switch"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "e8794c2a86da9183",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-SW02",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-SW02"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": "diagnostic"
+            },
+            {
+                "property": "device_class",
+                "value": "running"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "e1080f2cd0e06504",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-SW02",
+        "version": "6",
+        "entityType": "switch",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-SW02"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "switch"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "d4d18e2dfc66ed56",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-SW03",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-SW03"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": "diagnostic"
+            },
+            {
+                "property": "device_class",
+                "value": "running"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "10fbf25b253d0718",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-SW03",
+        "version": "6",
+        "entityType": "switch",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-SW03"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "switch"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "2a316d14fc5249ff",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-SW04",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-SW04"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": "diagnostic"
+            },
+            {
+                "property": "device_class",
+                "value": "running"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "c6b15d09b8bd527a",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-SW04",
+        "version": "6",
+        "entityType": "switch",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-SW04"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "switch"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "6b5bc229451d9033",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-SW05",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-SW05"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": "diagnostic"
+            },
+            {
+                "property": "device_class",
+                "value": "running"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "74a4206df9841d5f",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-SW05",
+        "version": "6",
+        "entityType": "switch",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-SW05"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "switch"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "e1316df49e02b6be",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-SW06",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-SW06"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": "diagnostic"
+            },
+            {
+                "property": "device_class",
+                "value": "running"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "fad9f109465b6187",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-SW06",
+        "version": "6",
+        "entityType": "switch",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-SW06"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "switch"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "98d282a2444bbbae",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-SW07",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-SW07"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": "diagnostic"
+            },
+            {
+                "property": "device_class",
+                "value": "running"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "d11a4919f19abfb1",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-SW07",
+        "version": "6",
+        "entityType": "switch",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-SW07"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "switch"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "ec186761314b80c2",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-SW08",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-SW08"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": "diagnostic"
+            },
+            {
+                "property": "device_class",
+                "value": "running"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "a43b0fc3ae76956f",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-SW08",
+        "version": "6",
+        "entityType": "switch",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-SW08"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "switch"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "5b8ef36ab2deac10",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-BS01",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-BS01"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "running"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "7f638f7126437189",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-BS02",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-BS02"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "running"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "4e88bde68612c3bd",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-BS03",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-BS03"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "running"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "b2ac7adbb9de137a",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-BS04",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-BS04"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "running"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "b47184c2f82997f6",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-BS05",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-BS05"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "running"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "c2a032e420dbda24",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-BS06",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-BS06"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "running"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "20ddfdd547e3a338",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-BS07",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-BS07"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "running"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "c8f22b1436058923",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-BS08",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-BS08"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "running"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "bfcd0f7fd8cb7e75",
+        "type": "ha-entity-config",
+        "server": "66a80d81.ee5e14",
+        "deviceConfig": "4d07bec8c54776d9",
+        "name": "M001-ALIVE",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "M001-ALIVE"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": "diagnostic"
+            },
+            {
+                "property": "device_class",
+                "value": "running"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "650182fc5d13a5ce",
+        "type": "inject",
+        "z": "fd177ccddb85d7c6",
+        "name": "Watch",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 660,
+        "wires": [
+            [
+                "4bd156c3ca253f21",
+                "01d9ef7ebb2b8446",
+                "bb1e1daa0e4d6e29",
+                "d6bf4bb193a3d39c"
+            ]
+        ]
+    },
+    {
+        "id": "4bd156c3ca253f21",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Relay",
+        "func": "let payload = {\n    fc: 0x01,\n    address: 0x0000,\n    quantity: 0x0008\n};\n\nreturn {\n    payload: {\n        ...payload,\n        unitid: env.get('unitid')\n    }\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 560,
+        "wires": [
+            [
+                "37dc00204e7817bd"
+            ]
+        ]
+    },
+    {
+        "id": "37dc00204e7817bd",
+        "type": "modbus-flex-getter",
+        "z": "fd177ccddb85d7c6",
+        "name": "Read",
+        "showStatusActivities": true,
+        "showErrors": false,
+        "showWarnings": false,
+        "logIOActivities": false,
+        "server": "da8e384eda9d22c7",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": true,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 510,
+        "y": 480,
+        "wires": [
+            [
+                "7e8999a1b4029d4a",
+                "d25281c187441bdd"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "7e8999a1b4029d4a",
+        "type": "debug",
+        "z": "fd177ccddb85d7c6",
+        "name": "Relay",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "d25281c187441bdd",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Status",
+        "func": "return [\n    { payload: (msg?.payload?.[0] === true ? true : false) },\n    { payload: (msg?.payload?.[1] === true ? true : false) },\n    { payload: (msg?.payload?.[2] === true ? true : false) },\n    { payload: (msg?.payload?.[3] === true ? true : false) },\n    { payload: (msg?.payload?.[4] === true ? true : false) },\n    { payload: (msg?.payload?.[5] === true ? true : false) },\n    { payload: (msg?.payload?.[6] === true ? true : false) },\n    { payload: (msg?.payload?.[7] === true ? true : false) }\n];",
+        "outputs": 8,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 340,
+        "wires": [
+            [
+                "3311b4b564659ac1"
+            ],
+            [
+                "7c0b61d11e23a9bb"
+            ],
+            [
+                "1f523b392a4b32b0"
+            ],
+            [
+                "34bf9fd113479277"
+            ],
+            [
+                "45f11524474369a4"
+            ],
+            [
+                "07091909b5414809"
+            ],
+            [
+                "667a0aacf7597227"
+            ],
+            [
+                "9fe73fa83fc550c9"
+            ]
+        ]
+    },
+    {
+        "id": "3311b4b564659ac1",
+        "type": "ha-binary-sensor",
+        "z": "fd177ccddb85d7c6",
+        "name": "Sensor 01",
+        "entityConfig": "464d56838e4e33cf",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "block",
+        "outputProperties": [],
+        "x": 930,
+        "y": 60,
+        "wires": [
+            [
+                "f55f7b7329899f5b"
+            ]
+        ]
+    },
+    {
+        "id": "f55f7b7329899f5b",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Verify",
+        "func": "let id = 'M001-SW01';\n\nglobal.get(id) ||\nglobal.set(id, {\n    state: null,\n    stamp: 0\n});\n\nreturn (\n    global.get(id).state !== msg.payload &&\n    global.get(id).stamp < Date.now() - 1000\n) ? { enable: msg.payload, payload: msg.payload } : null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 60,
+        "wires": [
+            [
+                "e92c34a2b23c76d1",
+                "ec625274bfdc5841"
+            ]
+        ]
+    },
+    {
+        "id": "e92c34a2b23c76d1",
+        "type": "ha-switch",
+        "z": "fd177ccddb85d7c6",
+        "name": "Switch 01",
+        "version": 0,
+        "debugenabled": false,
+        "inputs": 1,
+        "outputs": 2,
+        "entityConfig": "a455087cba84b5a2",
+        "enableInput": true,
+        "outputOnStateChange": true,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            }
+        ],
+        "x": 1200,
+        "y": 60,
+        "wires": [
+            [
+                "ec625274bfdc5841"
+            ],
+            [
+                "ec625274bfdc5841"
+            ]
+        ]
+    },
+    {
+        "id": "ec625274bfdc5841",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Relay",
+        "func": "let id = 'M001-SW01';\n\nglobal.set(id, {\n    state: (msg?.payload === true ? true : false),\n    stamp: (Date.now())\n});\n\nlet payload = {\n    fc: 0x05,\n    address: 0x0000,\n    quantity: 0x0001\n};\n\nreturn {\n    payload: {\n        ...payload,\n        unitid: env.get('unitid'),\n        value: global.get(id).state\n    }\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 60,
+        "wires": [
+            [
+                "c7eb07def0a26091"
+            ]
+        ]
+    },
+    {
+        "id": "7c0b61d11e23a9bb",
+        "type": "ha-binary-sensor",
+        "z": "fd177ccddb85d7c6",
+        "name": "Sensor 02",
+        "entityConfig": "e8794c2a86da9183",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "block",
+        "outputProperties": [],
+        "x": 930,
+        "y": 140,
+        "wires": [
+            [
+                "0b0527a4b8010966"
+            ]
+        ]
+    },
+    {
+        "id": "0b0527a4b8010966",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Verify",
+        "func": "let id = 'M001-SW02';\n\nglobal.get(id) ||\nglobal.set(id, {\n    state: null,\n    stamp: 0\n});\n\nreturn (\n    global.get(id).state !== msg.payload &&\n    global.get(id).stamp < Date.now() - 1000\n) ? { enable: msg.payload, payload: msg.payload } : null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 140,
+        "wires": [
+            [
+                "1b35ebe17ede50be",
+                "1da735adbcce4a2c"
+            ]
+        ]
+    },
+    {
+        "id": "1b35ebe17ede50be",
+        "type": "ha-switch",
+        "z": "fd177ccddb85d7c6",
+        "name": "Switch 02",
+        "version": 0,
+        "debugenabled": false,
+        "inputs": 1,
+        "outputs": 2,
+        "entityConfig": "e1080f2cd0e06504",
+        "enableInput": true,
+        "outputOnStateChange": true,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            }
+        ],
+        "x": 1200,
+        "y": 140,
+        "wires": [
+            [
+                "1da735adbcce4a2c"
+            ],
+            [
+                "1da735adbcce4a2c"
+            ]
+        ]
+    },
+    {
+        "id": "1da735adbcce4a2c",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Relay",
+        "func": "let id = 'M001-SW02';\n\nglobal.set(id, {\n    state: (msg?.payload === true ? true : false),\n    stamp: (Date.now())\n});\n\nlet payload = {\n    fc: 0x05,\n    address: 0x0001,\n    quantity: 0x0001\n};\n\nreturn {\n    payload: {\n        ...payload,\n        unitid: env.get('unitid'),\n        value: global.get(id).state\n    }\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 140,
+        "wires": [
+            [
+                "c7eb07def0a26091"
+            ]
+        ]
+    },
+    {
+        "id": "1f523b392a4b32b0",
+        "type": "ha-binary-sensor",
+        "z": "fd177ccddb85d7c6",
+        "name": "Sensor 03",
+        "entityConfig": "d4d18e2dfc66ed56",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "block",
+        "outputProperties": [],
+        "x": 930,
+        "y": 220,
+        "wires": [
+            [
+                "83421827add10e58"
+            ]
+        ]
+    },
+    {
+        "id": "83421827add10e58",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Verify",
+        "func": "let id = 'M001-SW03';\n\nglobal.get(id) ||\nglobal.set(id, {\n    state: null,\n    stamp: 0\n});\n\nreturn (\n    global.get(id).state !== msg.payload &&\n    global.get(id).stamp < Date.now() - 1000\n) ? { enable: msg.payload, payload: msg.payload } : null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 220,
+        "wires": [
+            [
+                "76b14c74909a68f8",
+                "e04acf328d243bbf"
+            ]
+        ]
+    },
+    {
+        "id": "76b14c74909a68f8",
+        "type": "ha-switch",
+        "z": "fd177ccddb85d7c6",
+        "name": "Switch 03",
+        "version": 0,
+        "debugenabled": false,
+        "inputs": 1,
+        "outputs": 2,
+        "entityConfig": "10fbf25b253d0718",
+        "enableInput": true,
+        "outputOnStateChange": true,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            }
+        ],
+        "x": 1200,
+        "y": 220,
+        "wires": [
+            [
+                "e04acf328d243bbf"
+            ],
+            [
+                "e04acf328d243bbf"
+            ]
+        ]
+    },
+    {
+        "id": "e04acf328d243bbf",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Relay",
+        "func": "let id = 'M001-SW03';\n\nglobal.set(id, {\n    state: (msg?.payload === true ? true : false),\n    stamp: (Date.now())\n});\n\nlet payload = {\n    fc: 0x05,\n    address: 0x0002,\n    quantity: 0x0001\n};\n\nreturn {\n    payload: {\n        ...payload,\n        unitid: env.get('unitid'),\n        value: global.get(id).state\n    }\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 220,
+        "wires": [
+            [
+                "c7eb07def0a26091"
+            ]
+        ]
+    },
+    {
+        "id": "34bf9fd113479277",
+        "type": "ha-binary-sensor",
+        "z": "fd177ccddb85d7c6",
+        "name": "Sensor 04",
+        "entityConfig": "2a316d14fc5249ff",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "block",
+        "outputProperties": [],
+        "x": 930,
+        "y": 300,
+        "wires": [
+            [
+                "d2c305830198ff81"
+            ]
+        ]
+    },
+    {
+        "id": "d2c305830198ff81",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Verify",
+        "func": "let id = 'M001-SW04';\n\nglobal.get(id) ||\nglobal.set(id, {\n    state: null,\n    stamp: 0\n});\n\nreturn (\n    global.get(id).state !== msg.payload &&\n    global.get(id).stamp < Date.now() - 1000\n) ? { enable: msg.payload, payload: msg.payload } : null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 300,
+        "wires": [
+            [
+                "e7f9684949309c27",
+                "2e4262a958322637"
+            ]
+        ]
+    },
+    {
+        "id": "e7f9684949309c27",
+        "type": "ha-switch",
+        "z": "fd177ccddb85d7c6",
+        "name": "Switch 04",
+        "version": 0,
+        "debugenabled": false,
+        "inputs": 1,
+        "outputs": 2,
+        "entityConfig": "c6b15d09b8bd527a",
+        "enableInput": true,
+        "outputOnStateChange": true,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            }
+        ],
+        "x": 1200,
+        "y": 300,
+        "wires": [
+            [
+                "2e4262a958322637"
+            ],
+            [
+                "2e4262a958322637"
+            ]
+        ]
+    },
+    {
+        "id": "2e4262a958322637",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Relay",
+        "func": "let id = 'M001-SW04';\n\nglobal.set(id, {\n    state: (msg?.payload === true ? true : false),\n    stamp: (Date.now())\n});\n\nlet payload = {\n    fc: 0x05,\n    address: 0x0003,\n    quantity: 0x0001\n};\n\nreturn {\n    payload: {\n        ...payload,\n        unitid: env.get('unitid'),\n        value: global.get(id).state\n    }\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 300,
+        "wires": [
+            [
+                "c7eb07def0a26091"
+            ]
+        ]
+    },
+    {
+        "id": "45f11524474369a4",
+        "type": "ha-binary-sensor",
+        "z": "fd177ccddb85d7c6",
+        "name": "Sensor 05",
+        "entityConfig": "6b5bc229451d9033",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "block",
+        "outputProperties": [],
+        "x": 930,
+        "y": 380,
+        "wires": [
+            [
+                "a879a95e15bee57e"
+            ]
+        ]
+    },
+    {
+        "id": "a879a95e15bee57e",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Verify",
+        "func": "let id = 'M001-SW05';\n\nglobal.get(id) ||\nglobal.set(id, {\n    state: null,\n    stamp: 0\n});\n\nreturn (\n    global.get(id).state !== msg.payload &&\n    global.get(id).stamp < Date.now() - 1000\n) ? { enable: msg.payload, payload: msg.payload } : null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 380,
+        "wires": [
+            [
+                "7754daa957a7890d",
+                "cf6147144c72993d"
+            ]
+        ]
+    },
+    {
+        "id": "7754daa957a7890d",
+        "type": "ha-switch",
+        "z": "fd177ccddb85d7c6",
+        "name": "Switch 05",
+        "version": 0,
+        "debugenabled": false,
+        "inputs": 1,
+        "outputs": 2,
+        "entityConfig": "74a4206df9841d5f",
+        "enableInput": true,
+        "outputOnStateChange": true,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            }
+        ],
+        "x": 1200,
+        "y": 380,
+        "wires": [
+            [
+                "cf6147144c72993d"
+            ],
+            [
+                "cf6147144c72993d"
+            ]
+        ]
+    },
+    {
+        "id": "cf6147144c72993d",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Relay",
+        "func": "let id = 'M001-SW05';\n\nglobal.set(id, {\n    state: (msg?.payload === true ? true : false),\n    stamp: (Date.now())\n});\n\nlet payload = {\n    fc: 0x05,\n    address: 0x0004,\n    quantity: 0x0001\n};\n\nreturn {\n    payload: {\n        ...payload,\n        unitid: env.get('unitid'),\n        value: global.get(id).state\n    }\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 380,
+        "wires": [
+            [
+                "c7eb07def0a26091"
+            ]
+        ]
+    },
+    {
+        "id": "07091909b5414809",
+        "type": "ha-binary-sensor",
+        "z": "fd177ccddb85d7c6",
+        "name": "Sensor 06",
+        "entityConfig": "e1316df49e02b6be",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "block",
+        "outputProperties": [],
+        "x": 930,
+        "y": 460,
+        "wires": [
+            [
+                "5ce87d83f52301ef"
+            ]
+        ]
+    },
+    {
+        "id": "5ce87d83f52301ef",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Verify",
+        "func": "let id = 'M001-SW06';\n\nglobal.get(id) ||\nglobal.set(id, {\n    state: null,\n    stamp: 0\n});\n\nreturn (\n    global.get(id).state !== msg.payload &&\n    global.get(id).stamp < Date.now() - 1000\n) ? { enable: msg.payload, payload: msg.payload } : null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 460,
+        "wires": [
+            [
+                "985d224e756abd74",
+                "60a98160de3eea6b"
+            ]
+        ]
+    },
+    {
+        "id": "985d224e756abd74",
+        "type": "ha-switch",
+        "z": "fd177ccddb85d7c6",
+        "name": "Switch 06",
+        "version": 0,
+        "debugenabled": false,
+        "inputs": 1,
+        "outputs": 2,
+        "entityConfig": "fad9f109465b6187",
+        "enableInput": true,
+        "outputOnStateChange": true,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            }
+        ],
+        "x": 1200,
+        "y": 460,
+        "wires": [
+            [
+                "60a98160de3eea6b"
+            ],
+            [
+                "60a98160de3eea6b"
+            ]
+        ]
+    },
+    {
+        "id": "60a98160de3eea6b",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Relay",
+        "func": "let id = 'M001-SW06';\n\nglobal.set(id, {\n    state: (msg?.payload === true ? true : false),\n    stamp: (Date.now())\n});\n\nlet payload = {\n    fc: 0x05,\n    address: 0x0005,\n    quantity: 0x0001\n};\n\nreturn {\n    payload: {\n        ...payload,\n        unitid: env.get('unitid'),\n        value: global.get(id).state\n    }\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 460,
+        "wires": [
+            [
+                "c7eb07def0a26091"
+            ]
+        ]
+    },
+    {
+        "id": "667a0aacf7597227",
+        "type": "ha-binary-sensor",
+        "z": "fd177ccddb85d7c6",
+        "name": "Sensor 07",
+        "entityConfig": "98d282a2444bbbae",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "block",
+        "outputProperties": [],
+        "x": 930,
+        "y": 540,
+        "wires": [
+            [
+                "5d10601fa6fbfec4"
+            ]
+        ]
+    },
+    {
+        "id": "5d10601fa6fbfec4",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Verify",
+        "func": "let id = 'M001-SW07';\n\nglobal.get(id) ||\nglobal.set(id, {\n    state: null,\n    stamp: 0\n});\n\nreturn (\n    global.get(id).state !== msg.payload &&\n    global.get(id).stamp < Date.now() - 1000\n) ? { enable: msg.payload, payload: msg.payload } : null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 540,
+        "wires": [
+            [
+                "e5620c3d67bdf8c2",
+                "b3fc59de77e2da10"
+            ]
+        ]
+    },
+    {
+        "id": "e5620c3d67bdf8c2",
+        "type": "ha-switch",
+        "z": "fd177ccddb85d7c6",
+        "name": "Switch 07",
+        "version": 0,
+        "debugenabled": false,
+        "inputs": 1,
+        "outputs": 2,
+        "entityConfig": "d11a4919f19abfb1",
+        "enableInput": true,
+        "outputOnStateChange": true,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            }
+        ],
+        "x": 1200,
+        "y": 540,
+        "wires": [
+            [
+                "b3fc59de77e2da10"
+            ],
+            [
+                "b3fc59de77e2da10"
+            ]
+        ]
+    },
+    {
+        "id": "b3fc59de77e2da10",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Relay",
+        "func": "let id = 'M001-SW07';\n\nglobal.set(id, {\n    state: (msg?.payload === true ? true : false),\n    stamp: (Date.now())\n});\n\nlet payload = {\n    fc: 0x05,\n    address: 0x0006,\n    quantity: 0x0001\n};\n\nreturn {\n    payload: {\n        ...payload,\n        unitid: env.get('unitid'),\n        value: global.get(id).state\n    }\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 540,
+        "wires": [
+            [
+                "c7eb07def0a26091"
+            ]
+        ]
+    },
+    {
+        "id": "9fe73fa83fc550c9",
+        "type": "ha-binary-sensor",
+        "z": "fd177ccddb85d7c6",
+        "name": "Sensor 08",
+        "entityConfig": "ec186761314b80c2",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "block",
+        "outputProperties": [],
+        "x": 930,
+        "y": 620,
+        "wires": [
+            [
+                "f060261321dc384f"
+            ]
+        ]
+    },
+    {
+        "id": "f060261321dc384f",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Verify",
+        "func": "let id = 'M001-SW08';\n\nglobal.get(id) ||\nglobal.set(id, {\n    state: null,\n    stamp: 0\n});\n\nreturn (\n    global.get(id).state !== msg.payload &&\n    global.get(id).stamp < Date.now() - 1000\n) ? { enable: msg.payload, payload: msg.payload } : null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 620,
+        "wires": [
+            [
+                "41273255f245b4c9",
+                "2eab7bfd7991dfe8"
+            ]
+        ]
+    },
+    {
+        "id": "41273255f245b4c9",
+        "type": "ha-switch",
+        "z": "fd177ccddb85d7c6",
+        "name": "Switch 08",
+        "version": 0,
+        "debugenabled": false,
+        "inputs": 1,
+        "outputs": 2,
+        "entityConfig": "a43b0fc3ae76956f",
+        "enableInput": true,
+        "outputOnStateChange": true,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            }
+        ],
+        "x": 1200,
+        "y": 620,
+        "wires": [
+            [
+                "2eab7bfd7991dfe8"
+            ],
+            [
+                "2eab7bfd7991dfe8"
+            ]
+        ]
+    },
+    {
+        "id": "2eab7bfd7991dfe8",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Relay",
+        "func": "let id = 'M001-SW08';\n\nglobal.set(id, {\n    state: (msg?.payload === true ? true : false),\n    stamp: (Date.now())\n});\n\nlet payload = {\n    fc: 0x05,\n    address: 0x0007,\n    quantity: 0x0001\n};\n\nreturn {\n    payload: {\n        ...payload,\n        unitid: env.get('unitid'),\n        value: global.get(id).state\n    }\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 620,
+        "wires": [
+            [
+                "c7eb07def0a26091"
+            ]
+        ]
+    },
+    {
+        "id": "c7eb07def0a26091",
+        "type": "modbus-flex-write",
+        "z": "fd177ccddb85d7c6",
+        "name": "Write",
+        "showStatusActivities": true,
+        "showErrors": false,
+        "showWarnings": false,
+        "server": "da8e384eda9d22c7",
+        "emptyMsgOnFail": true,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 1530,
+        "y": 340,
+        "wires": [
+            [
+                "8d88d476e8def5bd"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "8d88d476e8def5bd",
+        "type": "debug",
+        "z": "fd177ccddb85d7c6",
+        "name": "Write",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1650,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "01d9ef7ebb2b8446",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Input",
+        "func": "let payload = {\n    fc: 0x02,\n    address: 0x0000,\n    quantity: 0x0008\n};\n\nreturn {\n    payload: {\n        ...payload,\n        unitid: env.get('unitid')\n    }\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 760,
+        "wires": [
+            [
+                "a0c64898a15343c6"
+            ]
+        ]
+    },
+    {
+        "id": "a0c64898a15343c6",
+        "type": "modbus-flex-getter",
+        "z": "fd177ccddb85d7c6",
+        "name": "Read",
+        "showStatusActivities": true,
+        "showErrors": false,
+        "showWarnings": false,
+        "logIOActivities": false,
+        "server": "da8e384eda9d22c7",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": true,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 510,
+        "y": 840,
+        "wires": [
+            [
+                "4cd9c0fcc36eb13a",
+                "3c6cfe167d1daeb6"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "4cd9c0fcc36eb13a",
+        "type": "debug",
+        "z": "fd177ccddb85d7c6",
+        "name": "Input",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "3c6cfe167d1daeb6",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Status",
+        "func": "return [\n    { payload: (msg?.payload?.[0] === true ? true : false) },\n    { payload: (msg?.payload?.[1] === true ? true : false) },\n    { payload: (msg?.payload?.[2] === true ? true : false) },\n    { payload: (msg?.payload?.[3] === true ? true : false) },\n    { payload: (msg?.payload?.[4] === true ? true : false) },\n    { payload: (msg?.payload?.[5] === true ? true : false) },\n    { payload: (msg?.payload?.[6] === true ? true : false) },\n    { payload: (msg?.payload?.[7] === true ? true : false) }\n];",
+        "outputs": 8,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 980,
+        "wires": [
+            [
+                "451f6f2b1497bfb9"
+            ],
+            [
+                "190dc3b4a4a2165b"
+            ],
+            [
+                "e4b750a10a8b9e04"
+            ],
+            [
+                "9f499537158ed561"
+            ],
+            [
+                "c2c3ff019b961f9f"
+            ],
+            [
+                "530ff5c4457ff888"
+            ],
+            [
+                "4927da57a1538317"
+            ],
+            [
+                "ddcffc23c536b1b5"
+            ]
+        ]
+    },
+    {
+        "id": "451f6f2b1497bfb9",
+        "type": "ha-binary-sensor",
+        "z": "fd177ccddb85d7c6",
+        "name": "Sensor 01",
+        "entityConfig": "5b8ef36ab2deac10",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "block",
+        "outputProperties": [],
+        "x": 930,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "190dc3b4a4a2165b",
+        "type": "ha-binary-sensor",
+        "z": "fd177ccddb85d7c6",
+        "name": "Sensor 02",
+        "entityConfig": "7f638f7126437189",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "block",
+        "outputProperties": [],
+        "x": 930,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e4b750a10a8b9e04",
+        "type": "ha-binary-sensor",
+        "z": "fd177ccddb85d7c6",
+        "name": "Sensor 03",
+        "entityConfig": "4e88bde68612c3bd",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "block",
+        "outputProperties": [],
+        "x": 930,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9f499537158ed561",
+        "type": "ha-binary-sensor",
+        "z": "fd177ccddb85d7c6",
+        "name": "Sensor 04",
+        "entityConfig": "b2ac7adbb9de137a",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "block",
+        "outputProperties": [],
+        "x": 930,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c2c3ff019b961f9f",
+        "type": "ha-binary-sensor",
+        "z": "fd177ccddb85d7c6",
+        "name": "Sensor 05",
+        "entityConfig": "b47184c2f82997f6",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "block",
+        "outputProperties": [],
+        "x": 930,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "530ff5c4457ff888",
+        "type": "ha-binary-sensor",
+        "z": "fd177ccddb85d7c6",
+        "name": "Sensor 06",
+        "entityConfig": "c2a032e420dbda24",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "block",
+        "outputProperties": [],
+        "x": 930,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4927da57a1538317",
+        "type": "ha-binary-sensor",
+        "z": "fd177ccddb85d7c6",
+        "name": "Sensor 07",
+        "entityConfig": "20ddfdd547e3a338",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "block",
+        "outputProperties": [],
+        "x": 930,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ddcffc23c536b1b5",
+        "type": "ha-binary-sensor",
+        "z": "fd177ccddb85d7c6",
+        "name": "Sensor 08",
+        "entityConfig": "c8f22b1436058923",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "block",
+        "outputProperties": [],
+        "x": 930,
+        "y": 1260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bb1e1daa0e4d6e29",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Ping",
+        "func": "global.set('M001-PING', Date.now());\n\nlet payload = {\n    fc: 0x03,\n    address: 0x8000,\n    quantity: 0x0001\n};\n\nreturn {\n    payload: {\n        ...payload,\n        unitid: env.get('unitid')\n    }\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 660,
+        "wires": [
+            [
+                "6bd0663bb7e7a7ee"
+            ]
+        ]
+    },
+    {
+        "id": "6bd0663bb7e7a7ee",
+        "type": "modbus-flex-getter",
+        "z": "fd177ccddb85d7c6",
+        "name": "Read",
+        "showStatusActivities": true,
+        "showErrors": false,
+        "showWarnings": false,
+        "logIOActivities": false,
+        "server": "da8e384eda9d22c7",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 510,
+        "y": 660,
+        "wires": [
+            [
+                "05c64be5b83e80b1",
+                "c46901b4dbefe21f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "05c64be5b83e80b1",
+        "type": "debug",
+        "z": "fd177ccddb85d7c6",
+        "name": "Alive",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "c46901b4dbefe21f",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Pong",
+        "func": "global.set('M001-PONG', Date.now());",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d6bf4bb193a3d39c",
+        "type": "function",
+        "z": "fd177ccddb85d7c6",
+        "name": "Alive",
+        "func": "let ping = global.get('M001-PING');\nlet pong = global.get('M001-PONG');\n\nreturn {\n    payload: ((\n        typeof ping === 'number' &&\n        typeof pong === 'number' &&\n        ping > 0 &&\n        pong > 0 &&\n        ping - pong >= 0 &&\n        ping - pong <= 5000\n    ) ? true : false)\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 110,
+        "y": 700,
+        "wires": [
+            [
+                "9a8411b320c710d8"
+            ]
+        ]
+    },
+    {
+        "id": "9a8411b320c710d8",
+        "type": "ha-binary-sensor",
+        "z": "fd177ccddb85d7c6",
+        "name": "Alive",
+        "entityConfig": "bfcd0f7fd8cb7e75",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "block",
+        "outputProperties": [],
+        "x": 110,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    }
+]
